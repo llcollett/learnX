@@ -65,7 +65,7 @@ nav ul li:hover {
     background-color: hsl(50, 100%, 75%);
     cursor: pointer;
 }
-#arrow {
+#x {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,8 +73,8 @@ nav ul li:hover {
     width: 25%;
     transition: font-size 0.5s ease-out 0.1s, width 0.5s ease-out 0.1s;
 }
-nav:hover #arrow {
-    font-size: 0px;
+nav:hover #x {
+    font-size: 0rem;
     width: 0%;
 }
 
@@ -86,4 +86,8 @@ nav:hover #arrow {
 }
 .content {
     margin: 2.5% 2.5% 2.5% 7.5%;
+    transition: left 0.5s ease-out 0.1s;
+}
+nav:hover .content {
+    left: 200px;
 }
