@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>learn &#x1D465;</title>
+        <link href="./resources/css/styles.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--navigation bar along the left hand side-->
+        <nav>
+            <div class="panel">
+                <a href="./about.html"><h2 title="Learn skills from Leo">learn &#x1D465;</h2></a>
+                <ul>
+                    <a href="./piano.html"><li class="piano">Piano</li></a>
+                    <a href="./woodwork.html"><li class="woodwork">Woodwork</li></a>
+                    <a href="./maths.html"><li class="maths">Maths</li></a>
+                    <a href="./football.html"><li class="football">Football</li></a>
+                </ul>
+            </div>
+            <div id="x">&#x1D465;</div>
+        </nav>
+        <!--header stuck to top-->
+        <header>
+            <section class="header">
+                <a href="./index.html"><h1>learn &#x1D465;</h1></a>
+            </section>
+        </header>
+        <!--main scrollable content-->
+        <section class="content">
+            <h2 title="Hello, nice to meet you, good morning, afternooon and evening.">About learn &#x1D465;</h2>
+            <p>I am L, tutor in residence of learn &#x1D465;.</p>
+            <div class="images">
+                <figure>
+                    <img src="./resources/images/me1.jpg" alt="L in a bathing changing rooms in Sweden, camping with broken glasses.">
+                    <figcaption>Here I am having a lovely time in Sweden.</figcaption>
+                </figure>
+                <figure>
+                    <img src="./resources/images/me2.jpg" alt="L with their bike with a scenic Norwegian mountain backdrop.">
+                    <figcaption>And again, but this time in Norway.</figcaption>
+                </figure>
+            </div>
+            <div id="bandcamp">
+                <p>Here is some music I have made that you might enjoy:</p>
+                <iframe src="https://bandcamp.com/EmbeddedPlayer/album=3694942956/size=large/bgcol=333333/linkcol=ffd500/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://constantheadache.bandcamp.com/album/perennial">Perennial by Constant Headache</a></iframe>
+            </div>
+            <div>
+                <p>In terms of woodwork, you may check out my website <a href="../sqAF/index.html" target="_blank"><span id="sqaf">square and flush</span></a> for woodwork and plumbing related content and rad merch.</p>
+            </div>
+            <div id="form">
+                <h3>Tell me about you</h3>
+                <form action="./aboutsubmit.html" method="GET">
+                    <label for="name-1">What is your name?</label>
+                    <input type="text" id="name-1" name="name-1" placeholder="Enter your fullname" required>
+                    <br>
+                    <label for="age">How old are you?</label>
+                    <input type="number" id="age" name="age" placeholder="Enter your age" required>
+                    <br>
+                    <span>Are you interested in lessons?</span>
+                    <input type="radio" id="yes" name="answer" value="yes" required>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="answer" value="no" required>
+                    <label for="no">No</label>
+                    <br>
+                    <span>What skills would you like?</span>
+                    <br>
+                    <input type="checkbox" name="skills" id="piano" value="piano">
+                    <label for="piano">Piano</label>
+                    <input type="checkbox" name="skills" id="woodwork" value="woodwork">
+                    <label for="woodwork">Woodwork</label>
+                    <input type="checkbox" name="skills" id="maths" value="maths">
+                    <label for="maths">Maths</label>
+                    <input type="checkbox" name="skills" id="football" value="football">
+                    <label for="football">Football</label>
+                    <br>
+                    <label for="nice-thing">Tell me one nice thing about yourself:</label>
+                    <br>
+                    <textarea id="nice-thing" name="nice-thing" rows="4" cols="40" placeholder="I am a gorgeous soul." required></textarea>
+                    <br>
+                    <input type="submit" value="Tell me!" name="submit" id="submit">
+                </form>
+            </div>
+            <div id="more">
+                <h3>More about me</h3>
+                <div class="badge-base LI-profile-badge" data-locale="en_GB" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="laura-collett-b75403123" data-version="v1">
+                    <a class="badge-base__link LI-simple-link" href="https://uk.linkedin.com/in/laura-collett-b75403123?trk=profile-badge"></a>
+                </div>
+                <div id="socials">
+                    <img src="./resources/images/twitter-logo.png" alt="Twitter logo" /><a href="http://twitter.com/llcollett">@llcollett</a>
+                    <img src="./resources/images/instagram-logo.png" alt="Instagram logo" /><a href="http://instagram.com/colleygreen">@colleygreen</a>
+                </div>
+            </div>
+        </section>
+        <script src="./resources/js/about.js" type="text/javascript"></script>
+        <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    </body>
+</html>

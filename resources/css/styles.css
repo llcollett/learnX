@@ -47,6 +47,12 @@ nav:hover .panel {
 }
 nav h2 {
     text-align: center;
+    background-color: hsl(50, 100%, 50%);
+    transition: font-size 0.5s;
+}
+nav h2:hover {
+    font-size: 3rem;
+    cursor: pointer;
 }
 nav ul {
     margin: 0; padding: 0;
@@ -79,15 +85,83 @@ nav:hover #x {
 }
 
 .header {
+    position: fixed;
+    z-index: 2;
     margin: 0; padding: 0;
-    right: 0;
-    text-align: center;
+    top: 0;
+    left: 5%; right: 0;
+    width: 95%;
+    height: 10rem;
     border-bottom: 1px solid black;
+    background-color: white;
+    text-align: center;
+}
+.header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header a {
+    text-decoration: none;
 }
 .content {
+    position: relative;
+    top: 10rem;
     margin: 2.5% 2.5% 2.5% 7.5%;
-    transition: left 0.5s ease-out 0.1s;
+    transition: margin-left 0.5s ease-out 0.1s;
 }
 nav:hover .content {
-    left: 200px;
+    margin-left: 20rem;
+}
+.content div {
+    padding: 1rem;
+}
+
+
+/*about me section*/
+img {
+    height: 20rem;
+}
+.images {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#bandcamp iframe {
+    border: 0; 
+    width: 100%; 
+    height: 7.5rem;
+}
+.content #sqaf {
+    font-family: Orbitron;
+}
+#form {
+    line-height: 2rem;
+}
+
+#submit, #reinput {
+    cursor: pointer;
+    text-decoration: none;
+    background-color: hsl(50, 100%, 50%);
+    border: 1px solid black;
+    border-radius: 1rem;
+    box-shadow: 0 0.25rem 0.25rem black;
+    padding: 0.5rem;
+    width: auto;
+}
+#reinput:active {
+    transform: translateY(5rem);
+    box-shadow: 0 0 0; 
+    outline: 0; 
+}
+
+#socials {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#socials img {
+    height: 3rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
